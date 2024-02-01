@@ -1,0 +1,104 @@
+.comparison-container{
+    padding: 30px 100px;
+}
+.Back-button {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #000305;
+      color: #fff;
+    }
+  }
+
+.country-selection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 30px 100px;
+  }
+  
+  select {
+    margin-right: 10px;
+    background: #535658;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .comparison-details {
+    margin-top: 10px;
+  }
+  
+  h2 {
+    margin-top:5px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #5a5c5a;
+    color: white;
+  }
+  
+  img {
+    width: 100px; 
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 1200px) {
+    .comparison-container, .country-selection {
+      padding: 30px 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .comparison-container, .country-selection {
+      padding: 20px;
+    }
+  
+    select {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  
+    img {
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    select {
+      font-size: 14px;
+    }
+  }

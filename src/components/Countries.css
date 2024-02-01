@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 100px;
+  box-shadow: 0 10px 10px rgba(32, 45, 54, 0.5);
+}
+
+article {
+  background: #535658;
+  width: calc(25% - 20px); /* 25% width with 20px gap between articles */
+  margin-bottom: 20px;
+  border: 1px solid #7b7d7e;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+article:hover {
+  transform: scale(1.05);
+}
+
+img {
+  height: 150px; 
+  width: 100%; 
+  object-fit: cover; 
+  display: block; 
+  margin: 0 auto; 
+  border: 1px solid #7b7d7e; 
+  border-radius: 5px; 
+}
+
+/* Style each country detail */
+h3 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+article {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Change to a single column on smaller screens */
+  }
+  .container article {
+    width: calc(100% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .container article {
+    width: calc(100% - 10px); 
+    padding: 5px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .container article {
+    width: calc(100% - 7px); 
+    padding: 5px; 
+  }
+}
